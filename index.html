@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Meine Galerie</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <p class="fade-in delay-1">My Linktree</p>
+            <img src="linktree.png" alt="Bild 1" class="popup-image fade-in delay-2">
+        </div>
+
+        <div class="gallery-item">
+            <p class="fade-in delay-3">My .bat projects</p>
+            <img src="bat.png" alt="Bild 2" class="popup-image fade-in delay-4">
+        </div>
+    </div>
+
+    <h3 class="fade-in delay-5">How to contact me:</h3>
+    <h4 class="fade-in delay-6">emreayg@icloud.com</h4>
+
+    <!-- Modal für Bildanzeige -->
+    <div class="modal" id="imageModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const closeBtn = document.querySelector(".close");
+        const images = document.querySelectorAll(".popup-image");
+
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+                modal.style.display = "block";
+                modalImg.src = img.src;
+            });
+        });
+
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
