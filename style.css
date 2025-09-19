@@ -58,7 +58,7 @@ body {
 .gallery-item p {
   margin-top: 20px;
   font-size: 22px;
-  color: white;
+  color: black;
 }
 
 /* Bilder */
@@ -135,6 +135,7 @@ h3, h4 {
     font-size: 18px;
   }
 }
+
 
 
 
