@@ -20,6 +20,9 @@
 .fade-in.delay-4 { animation-delay: 3s; }
 .fade-in.delay-5 { animation-delay: 3.5s; }
 .fade-in.delay-6 { animation-delay: 4s; }
+.fade-in.delay-9 { animation-delay: 5.5s; }
+.fade-in.delay-10 { animation-delay: 6s; }
+
 
 /* Grundlayout */
 body {
@@ -130,3 +133,4 @@ h3, h4 {
     font-size: 18px;
   }
 }
+
