@@ -137,6 +137,29 @@ h3, h4 {
 }
 
 
+a {
+   display: block;
+    width: 100%;
+    max-width: 400px;
+   text-align: center;
+    margin: 0px auto 10px;
+    
+    padding: 15px 0;
+  color: slateblue;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover {
+  background-color: black;
+  text-decoration: underline;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+  .wrapper {
+      text-align: center;
+      margin-top: 20px;
+    }
 
 
 
